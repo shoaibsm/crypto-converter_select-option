@@ -28,7 +28,6 @@
                 color: var(--brand-color);
                 font-size: 3rem;
             }
-
         }
 
         .Converter__headingTxt {
@@ -41,13 +40,12 @@
 
     .Converter__card {
         width: 40%;
-        height: 70%;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
         border-radius: 4px;
         box-shadow: 0 0 50px 5px rgba($color: #000000, $alpha: 0.5);
-
 
         .Converter__inputBox {
             width: 100%;
@@ -79,23 +77,19 @@
 
         .Converter__selectBox {
             width: 100%;
-            height: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
             column-gap: 8px;
+            flex-wrap: wrap;
 
             .Converter__select {
-                width: 48%;
-                padding: 16px 8px;
-
-
+                width: 40%;
+                padding: 16px 4px;
                 border-radius: 4px;
-                margin: 8px 16px 8px 8px;
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 background-color: rgba(255, 255, 255, 0.4);
                 transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
                 border: 1px solid rgba(0, 169, 255, 0.4);
 
                 &:hover {
@@ -114,7 +108,7 @@
             display: flex;
             justify-content: space-around;
             padding-block: 16px;
-            // background-color: aliceblue;
+            margin-top: 20px;
 
             .Converter__inputTxt,
             .Converter__firstSelect,
@@ -142,7 +136,7 @@
             cursor: pointer;
             backdrop-filter: blur(5px);
             align-self: center;
-            margin-top: 50px;
+            margin-bottom: 20px;
 
             &:hover {
                 background-color: #009bd3;
@@ -151,6 +145,22 @@
 
             &:active {
                 background-color: var(--brand-color);
+            }
+        }
+    }
+
+    @media only screen and (max-width : 576px) {
+        .Converter__card {
+            width: 100%;
+            padding-inline: 16px;
+
+            .Converter__selectBox {
+                width: 100%;
+
+                .Converter__select {
+                    width: 100%;
+                    margin-top: 16px;
+                }
             }
         }
     }

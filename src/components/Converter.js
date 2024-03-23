@@ -3,7 +3,6 @@ import './Converter.scss'
 import { FaEquals } from "react-icons/fa";
 import { MdCurrencyBitcoin } from "react-icons/md";
 
-
 function Converter() {
 
     const apiUrl = 'https://api.coingecko.com/api/v3/exchange_rates';
@@ -120,8 +119,6 @@ function Converter() {
                 <button className='Converter__btn-convert' onClick={handleConvert}>Convert</button>
 
             </div>
-
-
         </div>
     )
 }
